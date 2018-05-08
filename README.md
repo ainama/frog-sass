@@ -55,11 +55,21 @@ frog-sass 使用 npm 管理器，你需要通过 npm 来安装 frog-save
 	已内置于 frog-sass，引入 frog-sass 的同时已经在使用。
 
 ### 变量 _const
-  1. Color  <br/>
+1. Color  <br/>
 
-	![image](https://github.com/ainama/frog-sass/blob/master/images/color@1x.png?raw=true)
+	```
+	// 四种主色
+	$primary-color: $BLUE_7;
+	$secondary-color: $GREEN_7;
+	$warning-color: $RED_7;
+	$default-color: $GREY_7;
+	
+	// $[颜色]_[1-10]
+	```
 
-  2. Front  <br/>
+  ![image](https://github.com/ainama/frog-sass/blob/master/images/color@2x.png?raw=true)
+
+2. Front  <br/>
 
   	```
   	// font-family
@@ -81,7 +91,7 @@ frog-sass 使用 npm 管理器，你需要通过 npm 来安装 frog-save
 	}
   	```
 
-  3. Device  <br/>
+3. Device  <br/>
 
     ```
     // 屏幕尺寸临界值
