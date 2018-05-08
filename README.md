@@ -82,15 +82,15 @@ frog-sass 使用 npm 管理器，你需要通过 npm 来安装 frog-save
 	// 针对 Chrmoe 无法展示 10 号字问题，暂时采取缩放方式解决
 	// 缩放会缩小块级元素，最好直接作用于 span 标签使用
 	@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  	  span {
-    	@include font-size-10();
-  	  }
+	  span {
+	    @include font-size-10();
+	  }
 	}
 
-Device
+#### Device
 
 	// 屏幕尺寸临界值
-  	$SCREEN_XS: 480px;
+	$SCREEN_XS: 480px;
 	$SCREEN_SM: 768px;
 	$SCREEN_MD: 992px;
 	$SCREEN_LG: 1200px;
