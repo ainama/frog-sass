@@ -6,7 +6,7 @@
 
 ## Install
 
-frog-sass 使用 npm 管理器，你需要通过 npm 来安装 frog-save
+frog-sass 使用 npm 管理器，你需要通过 npm 来安装 frog-sass
 
 	npm install frog-sass --save
 
