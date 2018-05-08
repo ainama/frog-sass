@@ -1,0 +1,92 @@
+/* 常用具有兼容性的属性 */
+
+@mixin prefix($property, $value) {
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+    #{$prefix}#{$property}: $value;
+  }
+}
+
+
+/* 浏览器兼容 flex 布局 */
+// 设置弹性布局
+@mixin flexDisplay {
+  display: flex;/* android 4.4 */
+  display: -webkit-box;/* Android 2.1-3.0, iOS 3.2-4.3 */
+  display: -webkit-flex;/* Chrome 21+ */
+  display: -ms-flexbox;/* WP IE 10 */
+}
+
+// 水平布局下的子元素 水平居中
+@mixin flexJustify($position) {
+  justify-content: $position;/* android 4.4 */
+  -webkit-box-pack: $position;/* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-justify-content: $position;/* Chrome 21+ */
+  -ms-flex-pack: $position;/* WP IE 10 */
+}
+
+// 水平布局下的子元素 垂直居中
+@mixin flexAlign($position) {
+  align-items: $position;/* android 4.4 */
+  -webkit-box-align: $position;/* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-align-items:$position;/* Chrome 21+ */
+  -ms-flex-align: $position;/* WP IE 10 */
+}
+
+// 设置弹性布局的方向，子元素按照在源文档中声明的顺序从上到下显示
+@mixin flexDirectionColum {
+  flex-direction: column;/* android 4.4 */
+  -webkit-box-orient: vertical;/* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex-direction: column;/* Chrome 21+ */
+  -ms-flex-direction: column;/* WP IE 10 */
+}
+
+// 子元素自动占据剩余的空间
+@mixin flex1 {
+  -webkit-box-flex: 1;/* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;/* Chrome 21+ */
+  -ms-flex: 1;/* WP IE 10 */
+  flex: 1;/* android 4.4 */
+}
+
+// 水平布局下的子元素 2端对齐
+@mixin flexPackJustify {
+  -webkit-box-pack: justify;/* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-justify-content: space-between;/* Chrome 21+ */
+  -ms-flex-pack: justify;/* WP IE 10 */
+  justify-content: space-between;/* android 4.4 */
+}
+
+
+
+/* 常用组合的属性 */
+
+// 省略号
+@mixin ellipsis() {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   -ms-text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+// 箭头
+@mixin arrow($direction: right, $width: 10px, $color:#000000) {
+  width: 0;
+  height: 0;
+  @if $direction == top {
+    border-left: #{$width} solid transparent;  /* 左边框的宽 */
+    border-right: #{$width} solid transparent; /* 右边框的宽 */
+    border-bottom: #{$width} solid $color;
+  } @else if $direction == bottom {
+    border-left: #{$width} solid transparent;  /* 左边框的宽 */
+    border-right: #{$width} solid transparent; /* 右边框的宽 */
+    border-top: #{$width} solid $color;
+  } @else if $direction == left {
+    border-top: #{$width} solid transparent; /* 上边框的宽 */
+    border-bottom: #{$width} solid transparent; /* 下边框的宽 */
+    border-right: #{$width} solid $color;
+  } @else if $direction == right {
+    border-top: #{$width} solid transparent; /* 上边框的宽 */
+    border-bottom: #{$width} solid transparent; /* 下边框的宽 */
+    border-left: #{$width} solid $color;
+  }
+}
