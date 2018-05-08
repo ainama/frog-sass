@@ -55,24 +55,21 @@ frog-sass 使用 npm 管理器，你需要通过 npm 来安装 frog-save
 	已内置于 frog-sass，引入 frog-sass 的同时已经在使用。
 
 ### 变量 _const
-1. Color  <br/>
+#### Color
 
-	```
 	// 四种主色
 	$primary-color: $BLUE_7;
 	$secondary-color: $GREEN_7;
 	$warning-color: $RED_7;
 	$default-color: $GREY_7;
-	
+
 	// $[颜色]_[1-10]
-	```
 
-  ![image](https://github.com/ainama/frog-sass/blob/master/images/color@2x.png?raw=true)
+![image](https://github.com/ainama/frog-sass/blob/master/images/color@2x.png?raw=true)
 
-2. Front  <br/>
+#### Front
 
-  	```
-  	// font-family
+	// font-family
 	// html 标签已默认设置 PC 和 Mobile 两种字体
 	$PC_FONT_FAMILY： "Noto Sans CJK SC", "Source Han Sans CN", STXihei, SimHei, "Microsoft YaHei";
 	$MOBILE_FONT_FAMILY: "Noto Sans CJK SC", "Source Han Sans CN", "PingFang SC", STXihei;
@@ -85,21 +82,18 @@ frog-sass 使用 npm 管理器，你需要通过 npm 来安装 frog-save
 	// 针对 Chrmoe 无法展示 10 号字问题，暂时采取缩放方式解决
 	// 缩放会缩小块级元素，最好直接作用于 span 标签使用
 	@media screen and (-webkit-min-device-pixel-ratio: 0) {
-	  span {
-	    @include font-size-10();
-	  }
+  	  span {
+    	@include font-size-10();
+  	  }
 	}
-  	```
 
-3. Device  <br/>
+Device
 
-    ```
-    // 屏幕尺寸临界值
-    $SCREEN_XS: 480px;
+	// 屏幕尺寸临界值
+  	$SCREEN_XS: 480px;
 	$SCREEN_SM: 768px;
 	$SCREEN_MD: 992px;
 	$SCREEN_LG: 1200px;
-    ```
 
 ### 统一添加浏览器前缀的方法
 
