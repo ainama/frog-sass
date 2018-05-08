@@ -57,7 +57,7 @@ frog-sass 使用 npm 管理器，你需要通过 npm 来安装 frog-save
 ### 变量 _const
   1. Color  <br/>
 
-	![image](http://img0.imgtn.bdimg.com/it/u=2801862717,279628383&fm=27&gp=0.jpg)
+	![image](https://github.com/ainama/frog-sass/blob/master/images/color@1x.png?raw=true)
 
   2. Front  <br/>
 
