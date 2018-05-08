@@ -10,7 +10,7 @@ frog-sass 使用 npm 管理器，你需要通过 npm 来安装 frog-save
 
 	npm install frog-sass --save
 
-安装 eyeglass 扩展包 (eyeglass地址：https://github.com/sass-eyeglass/eyeglass)
+安装 eyeglass 扩展包 (eyeglass 地址：https://github.com/sass-eyeglass/eyeglass)
 
 	npm install eyeglass --save-dev
 
