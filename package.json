@@ -8,5 +8,11 @@
   },
   "author": "",
   "license": "ISC",
+  "keywords": [
+    "sass",
+    "libsass",
+    "webpack",
+    "loader"
+  ],
   "repository": "https://github.com/ainama/frog-sass.git"
 }
