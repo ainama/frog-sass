@@ -67,7 +67,7 @@ frog-sass 使用 npm 管理器，你需要通过 npm 来安装 frog-sass
 
 ![image](https://github.com/ainama/frog-sass/blob/master/images/color@2x.png?raw=true)
 
-#### Front
+#### Font
 
 	// font-family
 	// html 标签已默认设置 PC 和 Mobile 两种字体
