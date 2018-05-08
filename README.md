@@ -100,7 +100,7 @@ frog-sass 使用 npm 管理器，你需要通过 npm 来安装 frog-save
     // 对于某些属性，浏览器的兼容可以通过添加前缀来处理
     @mixin prefix($property, $value) {
 	  @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
-		#{$prefix}#{$property}: $value;
+	    #{$prefix}#{$property}: $value;
       }
     }
 
